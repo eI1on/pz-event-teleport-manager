@@ -1,0 +1,37 @@
+Sandbox_EN = {
+
+  Sandbox_EventTeleportManager = "Event Teleport Manager",
+
+  Sandbox_EventAdminAccess = "Event Management Access Level",
+  Sandbox_EventAdminAccess_tooltip = "Minimum access level required to create, edit, or delete events. Players below this level can only view and participate in events.",
+  
+  Sandbox_EventTeleportManager_EventAdminAccess_option1 = "None (Everyone)",
+  Sandbox_EventTeleportManager_EventAdminAccess_option2 = "Observer+",
+  Sandbox_EventTeleportManager_EventAdminAccess_option3 = "GM+",
+  Sandbox_EventTeleportManager_EventAdminAccess_option4 = "Overseer+",
+  Sandbox_EventTeleportManager_EventAdminAccess_option5 = "Moderator+",
+  Sandbox_EventTeleportManager_EventAdminAccess_option6 = "Admin Only",
+
+  Sandbox_AllowPlayerRegistration = "Allow Player Self-Registration",
+  Sandbox_AllowPlayerRegistration_tooltip = "When enabled, players can register/unregister themselves from events. When disabled, only admins can add or remove players from events.",
+
+  Sandbox_TeleportReturnMode = "Return Teleport Mode",
+  Sandbox_TeleportReturnMode_tooltip = "How players can return from events: <LINE> 1. Original Only - Only to position before first event teleport <LINE> 2. Safehouse Only - Choose from player's safehouses <LINE> 3. Player Choice - Let players choose between original position and safehouse",
+
+  Sandbox_EventTeleportManager_TeleportReturnMode_option1 = "Original Position Only",
+  Sandbox_EventTeleportManager_TeleportReturnMode_option2 = "Safehouse Only", 
+  Sandbox_EventTeleportManager_TeleportReturnMode_option3 = "Player Choice",
+
+  Sandbox_ZombieCheck = "Zombie Escape Prevention",
+  Sandbox_ZombieCheck_tooltip = "Prevent players from teleporting when zombies are nearby to avoid using teleports as escape mechanism",
+
+  Sandbox_ZombieThreshold = "Zombie Detection Threshold",
+  Sandbox_ZombieThreshold_tooltip = "Maximum number of visible zombies allowed for teleporting (chasing/very close zombies always block teleporting)",
+
+  Sandbox_TeleportCooldown = "Teleport Cooldown (seconds)",
+  Sandbox_TeleportCooldown_tooltip = "Cooldown time between any teleports to prevent abuse. Set to 0 to disable cooldown.",
+
+  Sandbox_TeleportPositionProtection = "Position Overwrite Protection",
+  Sandbox_TeleportPositionProtection_tooltip = "Prevent accidentally overwriting saved return positions when teleporting between multiple events",
+
+}

@@ -1,0 +1,7 @@
+Tooltip_EN = {
+
+    /** Event Time Configuration **/
+    Tooltip_ETM_TeleportFrom = "Date and time when players can start teleporting to this event",
+    Tooltip_ETM_TeleportUntil = "Date and time when teleporting to this event is no longer available",
+    
+}

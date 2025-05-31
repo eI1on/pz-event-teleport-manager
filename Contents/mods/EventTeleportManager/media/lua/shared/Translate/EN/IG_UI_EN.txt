@@ -1,0 +1,154 @@
+IGUI_EN = {
+
+    /** Main UI **/
+    IGUI_ETM_Title = "Event Teleport Manager",
+    IGUI_ETM_Admin_Title = "Event Teleport Manager (Admin)",
+    IGUI_ETM_Player_Title = "Event Teleport Manager",
+    IGUI_ETM_AdminView = "Admin View",
+    IGUI_ETM_PlayerView = "Player View",
+    
+    /** Event Information **/
+    IGUI_ETM_NoEvents = "No events available",
+    IGUI_ETM_EventDetails = "Event Details",
+    IGUI_ETM_EventName = "Event Name",
+    IGUI_ETM_EventList = "Event List",
+    IGUI_ETM_AvailableEvents = "Available Events",
+    IGUI_ETM_TeleportFrom = "Teleport Available From",
+    IGUI_ETM_TeleportUntil = "Teleport Available Until",
+    IGUI_ETM_Location = "Location",
+    IGUI_ETM_Status = "Status",
+    IGUI_ETM_Players = "Registered Players",
+    IGUI_ETM_RegistrationStatus = "Registration Status",
+    
+    /** Event Status **/
+    IGUI_ETM_Status_Future = "Upcoming",
+    IGUI_ETM_Status_Active = "Active",
+    IGUI_ETM_Status_Ended = "Ended",
+    IGUI_ETM_Registered = "Registered",
+    IGUI_ETM_NotRegistered = "Not Registered",
+    
+    /** Buttons **/
+    IGUI_ETM_Create = "Create Event",
+    IGUI_ETM_DeleteEvent = "Delete Event",
+    IGUI_ETM_AddPlayer = "Add Player",
+    IGUI_ETM_RemovePlayer = "Remove Player",
+    IGUI_ETM_Register = "Register",
+    IGUI_ETM_Unregister = "Unregister",
+    IGUI_ETM_TeleportToEvent = "Teleport to Event",
+    IGUI_ETM_TeleportPlayers = "Teleport Players",
+    IGUI_ETM_ReturnPlayers = "Return Players",
+    IGUI_ETM_ReturnToPosition = "Return from Event",
+    IGUI_ETM_Add = "Add",
+    IGUI_ETM_Close = "Close",
+    IGUI_ETM_Save = "Save",
+    IGUI_ETM_Cancel = "Cancel",
+    IGUI_ETM_ContactAdmin = "Contact Admin",
+    
+    /** Date/Time Interface **/
+    IGUI_ETM_SetStartTime = "Set start time...",
+    IGUI_ETM_SetEndTime = "Set end time...",
+    IGUI_ETM_DateUpdated = "Date updated successfully",
+    
+    /** Success Messages **/
+    IGUI_ETM_RegistrationSuccess = "Successfully registered for event: %1",
+    IGUI_ETM_UnregistrationSuccess = "Successfully unregistered from event: %1",
+    IGUI_ETM_TeleportSuccess = "Teleported to event: %1",
+    IGUI_ETM_TeleportPlayersSuccess = "Teleported %1 players to event",
+    IGUI_ETM_ReturnSuccess = "Returned to your original position",
+    IGUI_ETM_ReturnPlayersSuccess = "Returned %1 players to original positions",
+    IGUI_ETM_ReturnToSafehouseSuccess = "Successfully returned to safehouse",
+    IGUI_ETM_LocationSet = "Location set for event",
+    IGUI_ETM_PlayerRemoved = "Removed player: %1 from event",
+    IGUI_ETM_EventCreated = "Event created: %1",
+    IGUI_ETM_EventUpdated = "Event updated: %1",
+    IGUI_ETM_EventDeleted = "Event deleted: %1",
+    IGUI_ETM_PlayersAdded = "%1 players added to event",
+    IGUI_ETM_PlayersRemoved = "%1 players removed from event",
+    
+    /** Progress Messages **/
+    IGUI_ETM_CreatingNewEvent = "Creating new event",
+    IGUI_ETM_TeleportingPlayers = "Teleporting players...",
+    IGUI_ETM_ReturningPlayers = "Returning players...",
+    IGUI_ETM_TeleportingToEvent = "Teleporting to event: %1",
+    IGUI_ETM_TeleportingPlayersCount = "Teleporting %1 players...",
+    IGUI_ETM_ReturningPlayersCount = "Returning %1 players...",
+    IGUI_ETM_TeleportedToEvent = "Teleported to event: %1",
+    IGUI_ETM_ReturnedToOriginal = "Returned to your original position",
+    IGUI_ETM_ReturnedToSafehouse = "Returned to your safehouse",
+    IGUI_ETM_ReturningToOriginal = "Returning to original position...",
+    IGUI_ETM_ReturningToSafehouse = "Returning to safehouse...",
+    
+    /** Error Messages **/
+    IGUI_ETM_AlreadyRegistered = "You are already registered for this event",
+    IGUI_ETM_UnregistrationFailed = "Failed to unregister from event",
+    IGUI_ETM_TeleportFailed = "Failed to teleport to event",
+    IGUI_ETM_ReturnFailed = "Failed to return to original position",
+    IGUI_ETM_EventNotFound = "Event not found",
+    IGUI_ETM_EventWindowClosed = "The teleport window for this event has closed",
+    IGUI_ETM_EventWindowNotOpen = "The teleport window for this event is not yet open",
+    IGUI_ETM_AccessDenied = "Access denied. Admin privileges required.",
+    IGUI_ETM_EventNameEmpty = "Event name cannot be empty",
+    IGUI_ETM_NoUsernamesProvided = "No usernames provided",
+    IGUI_ETM_InvalidAction = "Invalid action: %1",
+    IGUI_ETM_InvalidTeleportAction = "Invalid teleport action: %1",
+    IGUI_ETM_PlayerNotFound = "Player not found",
+    IGUI_ETM_EnterEventName = "Please enter an event name",
+    IGUI_ETM_StartBeforeEnd = "Start time must be before end time",
+    IGUI_ETM_EventNotStarted = "Event has not started yet",
+    IGUI_ETM_EventEnded = "Event has already ended",
+    IGUI_ETM_NotRegisteredForEvent = "You are not registered for this event",
+    IGUI_ETM_NoSavedPosition = "You must teleport to an event first before you can return",
+    IGUI_ETM_NoPlayersToTeleport = "No players to teleport",
+    IGUI_ETM_NoPlayersToReturn = "No players to return",
+    
+    /** Registration & Permission Messages **/
+    IGUI_ETM_SelfRegistrationDisabled = "Player self-registration is disabled. Contact an admin to join events.",
+    IGUI_ETM_AdminOnlyRegistration = "Registration is admin-only for this server.",
+    IGUI_ETM_AdminOnlyRegistrationInfo = "Only administrators can add or remove players from events on this server.",
+    
+    /** View Switching **/
+    IGUI_ETM_SwitchedToAdmin = "Switched to Admin View",
+    IGUI_ETM_SwitchedToPlayer = "Switched to Player View",
+    
+    /** Multi-Event Warnings **/
+    IGUI_ETM_MultipleActiveEvents = "Warning: You are registered for multiple active events",
+    IGUI_ETM_MultipleActiveEventsShort = "%1 active events",
+    IGUI_ETM_MultipleActiveEventsWarning = "You are registered for multiple active events: %1. Teleporting will save your current position for this event only.",
+    
+    /** Return Teleport Modal **/
+    IGUI_ETM_ReturnTeleportTitle = "Choose Return Destination",
+    IGUI_ETM_ReturnTeleportDesc = "Where would you like to return to?",
+    IGUI_ETM_ReturnToOriginal = "Return to Original Position",
+    IGUI_ETM_ReturnToSafehouse = "Return to Safehouse",
+    IGUI_ETM_ChooseSafehouse = "Choose Safehouse",
+    IGUI_ETM_OriginalPositionTooltip = "Return to your position before the event (X: %1, Y: %2, Z: %3)",
+    IGUI_ETM_SafehouseTooltip = "Return to %1 (X: %2, Y: %3)",
+    IGUI_ETM_SafehouseLocationTooltip = "Location: (X: %1, Y: %2)",
+    IGUI_ETM_MultipleSafehousesTooltip = "Choose from %1 available safehouses",
+    IGUI_ETM_SafehouseSelectionDesc = "Select which safehouse to return to:",
+    IGUI_ETM_SafehouseOwner = "(Owner)",
+
+    /** Return Options & Validation **/
+    IGUI_ETM_NoReturnOptions = "You must teleport to an event first",
+    IGUI_ETM_NoSafehouse = "You don't have a safehouse",
+    IGUI_ETM_OriginalNotAllowed = "Returning to original position is not allowed",
+    IGUI_ETM_SafehouseNotAllowed = "Returning to safehouse is not allowed", 
+    IGUI_ETM_InvalidReturnType = "Invalid return destination",
+    IGUI_ETM_SafehouseNotFound = "Safehouse not found",
+    
+    /** Safety & Cooldown Messages **/
+    IGUI_ETM_ZombiesThreat = "Cannot teleport while zombies are nearby",
+    IGUI_ETM_ReturnCooldown = "You must wait %1 seconds before teleporting again",
+    IGUI_ETM_ZombieWarning = "Cannot teleport: Zombies are nearby!",
+    IGUI_ETM_CooldownWarning = "Cooldown: %1 seconds remaining",
+    
+    /** Player Selection Modal **/
+    IGUI_ETM_AddPlayers = "Add Players to Event",
+    IGUI_ETM_OnlinePlayers = "Online Players",
+    IGUI_ETM_ManualInput = "Manual Input",
+    IGUI_ETM_SelectPlayersDesc = "Select players from the list below:",
+    IGUI_ETM_ManualInputDesc = "Enter usernames separated by semicolons (;)",
+    IGUI_ETM_ManualInputInstruct = "Example: Player1; Player Two; Another Player",
+    IGUI_ETM_PreviewUsernames = "Preview:",
+
+}
