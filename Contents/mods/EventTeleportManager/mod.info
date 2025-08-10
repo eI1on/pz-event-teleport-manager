@@ -1,7 +1,7 @@
-name=[B41] Event Teleport Manager [DEV Branch]
+name=[B41] Event Teleport Manager
 poster=poster.png
-id=EventTeleportManager_DEV
-description=A teleport manager mod for event organizers. Allows admins to set up events with specific teleport windows, register players, and teleport them all at once. Players can self-teleport during valid event windows.
+id=EventTeleportManager
+description=This mod introduces a comprehensive event management system, allowing [b]server administrators[/b] to create scheduled events with specific times and locations while enabling [b]players to register and participate[/b].
 require=ElyonLib
 tags=Build 41,Misc,Multiplayer,Interface
 versionMin=41.0
