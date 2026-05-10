@@ -1,27 +1,27 @@
 {
     "Lua.workspace.library": [
         "${addons}/umbrella/module/library",
-        "C:/Users/geote/ZomboidDEV/Workshop/pz-elyonlib-b41",
+        "${workspaceFolder}/../pz-elyonlib-b41"
     ],
     "Lua.runtime.version": "Lua 5.1",
     "Lua.runtime.path": [
         "?.lua",
         "?/init.lua",
+        "shared/?.lua",
+        "client/?.lua",
         "server/?.lua"
     ],
     "Lua.completion.requireSeparator": "/",
-    "Lua.workspace.preloadFileSize": 800,
+    "Lua.workspace.preloadFileSize": 1500,
+    "Lua.workspace.checkThirdParty": false,
     "Lua.runtime.builtin": {
         "debug": "disable",
         "io": "disable",
         "package": "disable"
     },
-    "Lua.workspace.checkThirdParty": false,
-    "Lua.diagnostics.globals": [
-        "require",
-        "Calendar"
-    ],
-        "[lua]": {
+    "Lua.diagnostics.globals": ["require", "Calendar"],
+    "Lua.diagnostics.disable": ["lowercase-global"],
+    "[lua]": {
         "editor.defaultFormatter": "JohnnyMorganz.stylua",
         "editor.formatOnSave": true
     }

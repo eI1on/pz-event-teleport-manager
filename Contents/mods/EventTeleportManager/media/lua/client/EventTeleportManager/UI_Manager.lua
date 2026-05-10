@@ -4,6 +4,7 @@ local DateTimeSelector = require("ElyonLib/UI/Calendar/DateTimeSelector")
 
 local Logger = require("EventTeleportManager/Logger")
 local EventTeleportManager = require("EventTeleportManager/Shared")
+local Theme = require("ElyonLib/UI/Theme/Theme")
 
 local CONST = {
 	LAYOUT = {
@@ -45,42 +46,45 @@ local CONST = {
 		MEDIUM = UIFont.Medium,
 		LARGE = UIFont.Large,
 	},
-	COLORS = {
-		BACKGROUND = {
-			NORMAL = { r = 0.1, g = 0.1, b = 0.1, a = 0.8 },
-			FIELD = { r = 0.15, g = 0.15, b = 0.15, a = 0.8 },
-			PANEL = { r = 0.1, g = 0.1, b = 0.1, a = 0.5 },
-		},
-		BORDER = {
-			NORMAL = { r = 0.4, g = 0.4, b = 0.4, a = 1 },
-			DARK = { r = 0.2, g = 0.2, b = 0.2, a = 1 },
-			LIGHT = { r = 0.5, g = 0.5, b = 0.5, a = 1 },
-		},
-		BUTTON = {
-			NORMAL = { r = 0.2, g = 0.2, b = 0.2, a = 0.8 },
-			HOVER = { r = 0.3, g = 0.3, b = 0.3, a = 0.8 },
-			SELECTED = { r = 0.3, g = 0.5, b = 0.7, a = 0.8 },
-			CLOSE = { r = 0.8, g = 0.2, b = 0.2, a = 0.8 },
-			CLOSE_HOVER = { r = 0.9, g = 0.3, b = 0.3, a = 0.8 },
-		},
-		TEXT = {
-			NORMAL = { r = 1, g = 1, b = 1, a = 1 },
-			ERROR = { r = 1, g = 0.2, b = 0.2, a = 1 },
-		},
-		TAB = {
-			ACTIVE = { r = 0.3, g = 0.5, b = 0.7, a = 0.8 },
-			INACTIVE = { r = 0.2, g = 0.2, b = 0.2, a = 0.8 },
-		},
-		LIST = {
-			ALT = { r = 0.15, g = 0.15, b = 0.15, a = 0.75 },
-			SELECTED = { r = 0.3, g = 0.5, b = 0.7, a = 0.9 },
-		},
-		EVENT = {
-			ACTIVE = { r = 0.2, g = 0.7, b = 0.2, a = 1 },
-			INACTIVE = { r = 0.7, g = 0.2, b = 0.2, a = 1 },
-			FUTURE = { r = 0.2, g = 0.2, b = 0.7, a = 1 },
-		},
-	},
+	COLORS = (function()
+		local T = Theme.colors
+		return {
+			BACKGROUND = {
+				NORMAL = Theme.copy(T.background),
+				FIELD = Theme.copy(T.panel),
+				PANEL = Theme.copy(T.panelDark),
+			},
+			BORDER = {
+				NORMAL = Theme.copy(T.border),
+				DARK = Theme.copy(T.borderDim),
+				LIGHT = Theme.copy(T.borderLight),
+			},
+			BUTTON = {
+				NORMAL = Theme.copy(T.buttonBg),
+				HOVER = Theme.copy(T.buttonHover),
+				SELECTED = Theme.copy(T.primary),
+				CLOSE = Theme.copy(T.danger),
+				CLOSE_HOVER = Theme.copy(T.dangerHover),
+			},
+			TEXT = {
+				NORMAL = Theme.copy(T.text),
+				ERROR = Theme.copy(T.danger),
+			},
+			TAB = {
+				ACTIVE = Theme.copy(T.primary),
+				INACTIVE = Theme.copy(T.buttonBg),
+			},
+			LIST = {
+				ALT = Theme.copy(T.listAlt),
+				SELECTED = Theme.copy(T.selected),
+			},
+			EVENT = {
+				ACTIVE = Theme.copy(T.success),
+				INACTIVE = Theme.copy(T.danger),
+				FUTURE = Theme.copy(T.primary),
+			},
+		}
+	end)(),
 }
 
 local function copyColor(color)
